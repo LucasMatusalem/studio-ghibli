@@ -1,0 +1,130 @@
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: calc(100% - 6rem);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #F9F9F9;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+/* --BUTTONS-- */
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+}
+
+.button-center {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 2px;
+  width: 170px;
+  height: 50px;
+  transition: filter 0.2s;
+  border-radius: 300px 20px;
+  background-color: #628E75;
+  border: white 1px solid;
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.button-center:hover {
+  filter: brightness(1.5)
+}
+/* --/BUTTONS-- */
+
+/* --TABLE-- */
+table {
+  border-collapse: collapse;
+  margin: 10px;
+  width: 600px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  justify-self: center;
+}
+
+th {
+  color: white;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+th, tr {
+  height: 50px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin: 0;
+}
+
+tr:last-of-type {
+  border-bottom: none;
+}
+/* --/TABLE--*/
+
+
+/* --MEDIA FOR RESPONSIVE-- */
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 100%
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 93.75%
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 87.5%
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main div {
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+
+  main div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  div.button-container {
+    height: 152px;
+    flex-direction: column;
+  }
+
+}
+
+/* --/MEDIA FOR RESPONSIVE-- */

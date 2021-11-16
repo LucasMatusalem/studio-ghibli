@@ -1,0 +1,38 @@
+/* --HEADER-- */
+header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+header img:first-child {
+  height: 50%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+ul li img {
+  width: 22px;
+}
+
+header img:hover {
+  transition: filter 0.2s;
+  filter: invert();
+}
+
+/* --/HEADER-- */

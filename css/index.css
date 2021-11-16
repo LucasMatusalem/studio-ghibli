@@ -1,0 +1,181 @@
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  height: calc(100% - 6rem);
+
+  display: flex;
+  justify-content: center;
+
+}
+
+main div {
+  width: 50%;
+
+  padding: 3rem;
+
+}
+
+main div img {
+  width: 100%;
+  transition: filter 1s;
+}
+
+main div img:hover {
+  filter: saturate(8);
+}
+
+h2 {
+  margin-bottom: 40px;
+  color: #F9F9F9;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #F9F9F9;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+main div p {
+  color: #F9F9F9;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* --BUTTONS-- */
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
+  width: 100%;
+  padding: 10px;
+}
+
+.button-center {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 2px;
+  width: 170px;
+  height: 50px;
+  transition: filter 0.2s;
+  border-radius: 300px 20px;
+  background-color: #628E75;
+  border: white 1px solid;
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.button-center:hover {
+  filter: brightness(1.5)
+}
+/* --/BUTTONS-- */
+
+/* --MODAL-- */
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  padding: 60px;
+  width: 800px;
+  height: calc(800px/1.5);
+}
+
+.modal-buttons {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  cursor: pointer;
+  color: #a09f9f;
+  transition: color 0.4s;
+}
+
+.close:hover {
+  color: red;
+}
+
+.yt-trailer-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+/* --/MODAL-- */
+
+/* --MEDIA FOR RESPONSIVE-- */
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 100%
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 93.75%
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 87.5%
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  main div {
+    width: 100%;
+    height: 50%;
+    padding: 2rem;
+  }
+
+  main div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  div.button-container {
+    height: 152px;
+    flex-direction: column;
+  }
+
+}
+
+
+/* --/MEDIA FOR RESPONSIVE-- */

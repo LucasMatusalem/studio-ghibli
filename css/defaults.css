@@ -1,0 +1,23 @@
+/* --DEFAULT CONFIGURATION-- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #628e75, #1a4855);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+/* --/DEFAULT CONFIGURATION-- */
